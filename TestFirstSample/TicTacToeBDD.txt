@@ -1,0 +1,36 @@
+﻿Behaviour Driven Development
+
+(-) Action that an actor wishes to accomplish
+(*) Response from the system
+
+Specifications
+- When the player starts a game
+	* it should ask for the number of columns and 	
+	* it should ask for the player's name and
+	* it should ask for the computer's name and
+	* it should ask if the player moves first
+
+- When Player goes first 
+	* it should put their mark in the selected position 
+	* it should make the next move 
+
+- When Computer goes first 
+	* it should put an X in one of the available positions 
+
+- When the player attempts to select an occupied position 
+	* it should tell the player the position is occupied 
+
+- When the player attempts to select an invalid position 
+	* it should tell the player the position is invalid 
+
+- When the player gets three in a row 
+	* it should announce the player as the winner 
+
+- When the game gets three in a row 
+	* it should announce the game as the winner 
+
+- When the player can not win on the next turn 
+	* it should try to get three in a row 
+
+- When the player can win on the next turn 
+	* it should block the player 
