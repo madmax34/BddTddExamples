@@ -4,7 +4,7 @@
 (*) Response from the system
 
 Specifications
-- When the player starts a game
+- Before player starts a game
 	* it should ask for the number of columns and 	
 	* it should ask for the player's name and
 	* it should ask for the computer's name and

@@ -26,3 +26,13 @@ Scenario: Configure Computer as first player
 	And my player name should show "Maxi" on screen
 	And the computer name should be "Hal"
 	And my name should be decorated with an "O"
+
+Scenario: Configure Player name as "Melinda"
+Given I enter 3 as the number of columns	
+	And also I enter "Melinda" as my name
+	And also I enter "Hal" as the computer name
+	And also I select "Sí" as I whant to start first	
+	Then the board should be initialized to 9 elements
+	And my player name should show "Melinda" on screen
+	And the computer name should be "Hal"
+	And my name should be decorated with an "X"

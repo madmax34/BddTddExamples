@@ -60,6 +60,12 @@
       <DependentUpon>ComputerGoesFirst.feature</DependentUpon>
     </Compile>
     <Compile Include="ComputerGoesFirstSteps.cs" />
+    <Compile Include="ControlPlayerPositioning.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlPlayerPositioning.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPlayerPositioningSteps.cs" />
     <Compile Include="PlayerGoesFirst.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +85,10 @@
     <None Include="ComputerGoesFirst.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ComputerGoesFirst.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ControlPlayerPositioning.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ControlPlayerPositioning.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="PlayerGoesFirst.feature">

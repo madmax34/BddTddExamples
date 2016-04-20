@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ControlPlayerPositioning.cs" />
     <Compile Include="GameManagerComputerMovesFirst.cs" />
     <Compile Include="GameManagerConfigurationTests.cs" />
     <Compile Include="GameManagerPlayerMovesFirst.cs" />

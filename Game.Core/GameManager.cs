@@ -10,6 +10,7 @@ namespace Game.Core
         private List<char> _boardLayout;
         private Player _humanPlayer;
         private Player _computerPlayer;
+        private string _warningMessage;
 
         public GameManager()
         {
@@ -68,8 +69,19 @@ namespace Game.Core
 
         public void ChoosePosition(int selectedPosition)
         {
+            if (IsOccupied(selectedPosition))
+            {
+                _warningMessage = "La posición ya ha sido tomada";
+                throw new InvalidOperationException("La posición ya ha sido tomada");
+            }
+
             _humanPlayer.SetPosition(selectedPosition, _boardLayout);
             MakeComputerMove();
+        }
+
+        private bool IsOccupied(int selectedPosition)
+        {
+            return _boardLayout[selectedPosition] != '\0';
         }
 
         public char GetMarkAtPosition(int position)
@@ -93,6 +105,11 @@ namespace Game.Core
         public char GetComputerMark()
         {
             return _computerPlayer.GetMark();
+        }
+
+        public string GetWarning()
+        {
+            return _warningMessage;
         }
     }
 }
